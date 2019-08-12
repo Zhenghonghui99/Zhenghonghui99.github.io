@@ -19,7 +19,7 @@
     <link rel="alternative" href="/atom.xml" title="郑鸿辉的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assers/img/网页图标.jpg">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img/头像.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">郑鸿辉</a></h1>
@@ -101,7 +101,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/头像.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">郑鸿辉</h1>
@@ -172,14 +172,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="使用Hexo搭建的博客"><a href="#使用Hexo搭建的博客" class="headerlink" title="使用Hexo搭建的博客"></a>使用Hexo搭建的博客</h2><h2 id="第一章-步骤"><a href="#第一章-步骤" class="headerlink" title="第一章 步骤"></a>第一章 步骤</h2><p>1.到node.js官网下载node.js选择对应版本的xxx.TSL, 然后无脑下一步<br>2.Windos下直接打开cmd，查看一下安装好的node的版本和npm（包管理器的版本） node -v   npm -v<br>3.因为中国特色，下载国外镜像很慢，所以taobao有一个镜像cnpm，大家直接到taobao上下载就好  npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>4.安装cnpm后查看一下它的版本 cnpm -v<br>5.然后通过cnpm来安装hexo cnpm install -g hexo-cli<br>6安装好后通过查看一下hexo版本 hexo -v<br>7.新建一个文件夹blog，有错删掉重建  mkdir blog，然后进入到文件夹内cd blog/<br>8.生成初始化一个hexo博客 sudo hexo init在linux下，我这个是windos下的，在windows10下到git官网下载git安装，无脑下一步。<br>9.进入到创建的blog内，单击右键选择git bash here 进入到git的命令行中，通过使用git -v查看git的信息。<br>10.生成初始化一个博客 hexo init，然后开始生成，提升Start blogging with Hexo!说明生成成功<br>11通过ls -l查看具体生成的配置<br>12.先进行hexo的预编译 hexo g，启动我们生成的博客 hexo -s 在localhost：4000查看，注意不要在git bash here使用ctrl+v这样会关掉博客端口导致无法打开<br>13.建立自己的第一篇博客在git bash here使用ctrl+v关闭端口 使用hexo n “博客的标题”进入到source下的_posts下 cd/source/_posts  vim 博客标题.md进入博客文档内进行编写 ctrl+ins复制 shift+ins粘贴，写好后 按住esc 输入：wq退出<br>14.退出来后cd ../..退出到blog下，hexo clean清理一下，然后在生成hexo g<br>15.注册一个github账号，并new一个repository，名称命名为 左边的名称.github.io,描述随便,然后creat<br>16.将生成的博客部署到远端github上，先配置一下 vim -config.yml<br>type: git<br>repo: github上的库名<br>branch：master<br>message：blog 注意冒号后面都要加空格， 按esc+：wq保持退出<br>17.hexo g预编译一下 hexo d将博客上传到github上，如果出现please tell me who are you<br>输入git config –global user.name “zhenghonghui1999”(yourname)设置Git用户名，回车<br>输入git config –global user.email “<a href="mailto:zhenghonghui1999@qq.com" target="_blank" rel="noopener">zhenghonghui1999@qq.com</a>“(youremail)设置Git邮箱然后回车<br>18.如果提示让你输入github账号密码，输入就好.然后部署成功，通过打开zhenghonghui99.github.io看看你的blog是否部署成功</p>
-<h2 id="第二章-主题"><a href="#第二章-主题" class="headerlink" title="第二章 主题"></a>第二章 主题</h2><p>19.更换主题 进入blog目录中git bash here  输入git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia，将主题下载到blog\themes\yilia中<br>20.回到blog中 再配置一下vim -config.yml  找到theme：将原来的landscape改为下载的yilia 。esc+：wq保存退出<br>21.hexo clean 在hexo g编译一下 hexo s本地4000端口预览一下，hexo d推送跟换好的主题到远端</p>
-<h2 id="第三章-插入图片"><a href="#第三章-插入图片" class="headerlink" title="第三章 插入图片"></a>第三章 插入图片</h2><p>22.如何在hexo中插入图片首先到hexo(blog)目录下的_config.yml进行配置，vim _config.yml 把post_asset_folder改为true<br>23.在hexo(blog)目录下执行 npm install hexo-asset-image –save ,有warning不管，然后通过hexo n “博客名”,发现在source下的_post里出现一个跟你博客名一样的文件夹就OK<br>24.将要使用的图片放在这个文件夹中，然后在写博客中通过makedown语法！[任何文本](文件夹名/图片名.图片格式），然后部署和预览博客试试</p>
-<h2 id="正确的本地图片插入"><a href="#正确的本地图片插入" class="headerlink" title="正确的本地图片插入"></a>正确的本地图片插入</h2><h2 id><a href="#" class="headerlink" title></a><img src="/2019/08/05/学习HEXO的体会/%E6%AD%A3%E7%A1%AE%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87.jpg" alt="ss"></h2><h2 id="下面是我放入的图片"><a href="#下面是我放入的图片" class="headerlink" title="下面是我放入的图片"></a>下面是我放入的图片</h2><h2 id="-1"><a href="#-1" class="headerlink" title></a><img src="/2019/08/05/学习HEXO的体会/%E5%AD%A6%E4%B9%A0.jpg" alt="ss"></h2><p>通过&lt;–img- src=”/img/图片名称”&gt;来显示，首先要在source里建立一个新的文件夹img然后把要显示的图片拖进来</p>
-<img src="/2019/08/05/学习HEXO的体会/学习.jpg">
-
-<hr>
-<pre><code>作者：郑鸿辉 学号：1716040322</code></pre>
+        <h2 id="使用Hexo搭建的博客"><a href="#使用Hexo搭建的博客" class="headerlink" title="使用Hexo搭建的博客"></a>使用Hexo搭建的博客</h2><h2 id="第一章-步骤"><a href="#第一章-步骤" class="headerlink" title="第一章 步骤"></a>第一章 步骤</h2>
+        
+          <a class="article-more-a" href="/2019/08/05/学习HEXO的体会/#more">more >></a>
+        
       
 
       
