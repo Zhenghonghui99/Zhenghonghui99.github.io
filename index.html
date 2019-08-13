@@ -8,6 +8,21 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>郑鸿辉的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+    <style>
+    .pace .pace-progress {
+        background: #6d6d6d; /*进度条颜色*/
+        height: 2px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #6d6d6d; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #6d6d6d;    /*上边框颜色*/
+        border-left-color: #6d6d6d;    /*左边框颜色*/
+    }
+  </style>
   <meta property="og:type" content="website">
 <meta property="og:title" content="郑鸿辉的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -19,7 +34,7 @@
     <link rel="alternative" href="/atom.xml" title="郑鸿辉的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/assers/img/网页图标.jpg">
+    <link rel="icon" href="/img/bitbug_favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -55,10 +70,15 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
+		<nav>
+               总文章数 4
+                </nav>
+		<nav>总字数 <span class="post-count">2.1k</span>
+                </nav>
 		<nav class="header-smart-menu">
     		
     			
@@ -135,7 +155,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -151,6 +171,85 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-yilia主题的基本配置-一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/14/yilia主题的基本配置-一/">yilia主题的基本配置(一)</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/14/yilia主题的基本配置-一/" class="archive-article-date">
+  	<time datetime="2019-08-13T20:42:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
+</a>
+        
+      </header>
+      <div align="center" class="post-count">
+字数：1,057字 | 预计阅读时长：4分钟
+      </div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="网站信息和作者信息"><a href="#网站信息和作者信息" class="headerlink" title="网站信息和作者信息"></a>网站信息和作者信息</h2><p>1.关于更改网站的名称和网站的作者，进入blog下的_config.yml，找到# site 下有title和author，改为郑鸿辉的博客和郑鸿辉。<br>2.设置站点图标，先到比特虫将图片转化位.ico格式，然后我再yilia的source的文件夹里建立了一个assets文件夹里面有个img文件夹，然后将图片存储再这里。找到BLOG\themes\modernist\layout_partial\head.ejs，设置为<br>&lt;% if (theme.favicon){ %&gt;<br> link rel=”icon” href=”/img/bitbug_favicon.ico”<br>&lt;% } %&gt;<br>以下HTML元素为了能显示，均少了&lt;&gt;<br>3.设置作者头像,同样我把头像照片存入到了上面的assets文件夹中的img中，然后打开 BLOG\themes\yilia_config.yml 配置文件，修改 favicon 一栏为 /themes/yilia/source/，修改 avatar 头像一栏为 /assert/img/头像.jpg。</p>
+<h2 id="所有文章按钮"><a href="#所有文章按钮" class="headerlink" title="所有文章按钮"></a>所有文章按钮</h2><p>4.设置所有文章，首先使用命令 node -v 检查版本是不是大于6.2。在博客根目录blog执行以下命令：<br>npm i hexo-generator-json-content –save<br>在博客配置文件 _config.yml 最下面加上：<br>jsonContent:<br>meta: false<br>pages: false<br>posts:<br>title: true<br>date: true<br>path: true<br>text: false<br>raw: false<br>content: false<br>slug: false<br>updated: false<br>comments: false<br>link: false<br>permalink: false<br>excerpt: false<br>categories: false<br>tags: true</p>
+<h2 id="文章显示摘要及目录"><a href="#文章显示摘要及目录" class="headerlink" title="文章显示摘要及目录"></a>文章显示摘要及目录</h2><p>5.文章显示摘要#<br>在你 MD 格式文章正文插入</p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/14/yilia主题的基本配置-一/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-学习HEXO的体会" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -169,12 +268,13 @@
 </a>
         
       </header>
+      <div align="center" class="post-count">
+字数：960字 | 预计阅读时长：4分钟
+      </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="使用Hexo搭建的博客"><a href="#使用Hexo搭建的博客" class="headerlink" title="使用Hexo搭建的博客"></a>使用Hexo搭建的博客</h2><h2 id="第一章-步骤"><a href="#第一章-步骤" class="headerlink" title="第一章 步骤"></a>第一章 步骤</h2>
-        
-          <a class="article-more-a" href="/2019/08/05/学习HEXO的体会/#more">more >></a>
         
       
 
@@ -188,7 +288,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">1</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -245,6 +349,9 @@
 </a>
         
       </header>
+      <div align="center" class="post-count">
+字数：16字 | 预计阅读时长：1分钟
+      </div>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -314,6 +421,9 @@
 </a>
         
       </header>
+      <div align="center" class="post-count">
+字数：78字 | 预计阅读时长：1分钟
+      </div>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -465,7 +575,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">1</a>
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
