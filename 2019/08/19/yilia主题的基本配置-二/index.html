@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | CODE的博客</title>
+  <title>yilia主题的基本配置(二) | CODE的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,17 +23,18 @@
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="本篇介绍访问量统计和代码区域显示，插入音乐和视频">
+<meta name="keywords" content="yilia">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/07/29/hello-world/index.html">
+<meta property="og:title" content="yilia主题的基本配置(二)">
+<meta property="og:url" content="http://yoursite.com/2019/08/19/yilia主题的基本配置-二/index.html">
 <meta property="og:site_name" content="CODE的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="本篇介绍访问量统计和代码区域显示，插入音乐和视频">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-17T20:06:35.097Z">
+<meta property="og:updated_time" content="2019-08-19T16:17:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="yilia主题的基本配置(二)">
+<meta name="twitter:description" content="本篇介绍访问量统计和代码区域显示，插入音乐和视频">
   
     <link rel="alternative" href="/atom.xml" title="CODE的博客" type="application/atom+xml">
   
@@ -173,25 +174,25 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-yilia主题的基本配置-二" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      yilia主题的基本配置(二)
     </h1>
   
 
         
-        <a href="/2019/07/29/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-29T14:14:35.784Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-29</time>
+        <a href="/2019/08/19/yilia主题的基本配置-二/" class="archive-article-date">
+  	<time datetime="2019-08-19T15:24:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-19</time>
 </a>
         
       </header>
       <div align="center" class="post-count">
-字数：78字 | 预计阅读时长：1分钟
+字数：731字 | 预计阅读时长：3分钟
       </div>
       <div align="center">
       <span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
@@ -199,21 +200,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <p>本篇介绍访问量统计和代码区域显示，插入音乐和视频</p>
 <a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="访问量统计"><a href="#访问量统计" class="headerlink" title="访问量统计"></a>访问量统计</h2><p>1.添加不蒜子访问统计，利用这个统计可以知道你的博客访问量。在 themes\yilia\layout_partial\after-footer.ejs最后添加</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script  async  src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>2.将进行站点访问的统计的和访客统计的放入网页的下端<br>修改themes\yilia\layout_partial\footer.ejs<br>插入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line"><span class="comment"># PV方式，单个用户连续点击 n 篇，记录 n 次记录值</span></span><br><span class="line">&lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;    本站总访问量&lt;span id=<span class="string">"busuanzi_value_site_pv"</span>&gt;&lt;/span&gt;次&lt;/span&gt;</span><br><span class="line"><span class="comment"># UV方式，单个用户连续点击 n 篇，记录 1 次记录值</span></span><br><span class="line">&lt;span id=<span class="string">"busuanzi_container_site_uv"</span>&gt;  本站访客数&lt;span id=<span class="string">"busuanzi_value_site_uv"</span>&gt;&lt;/span&gt;人次&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>3.博文的访问统计<br>进入到themes\yilia\layout_partial\aritcle.ejs<br>在阅读估计下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div align=<span class="string">"center"</span>&gt;</span><br><span class="line">&lt;span id=<span class="string">"busuanzi_container_page_pv"</span>&gt;  本文总阅读量&lt;span id=<span class="string">"busuanzi_value_page_pv"</span>&gt;&lt;/span&gt;次&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="代码显示和文本超链接"><a href="#代码显示和文本超链接" class="headerlink" title="代码显示和文本超链接"></a>代码显示和文本超链接</h2><p>4.显示代码块<br>三个英文波浪号(空格)bash<br>代码<br>三个英文波浪号<br>例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>5.文本显示为超链接<br>格式：<br>英文中括号 文本 英文中括号(网址)<br>例：<br><a href="http://zhenghonghui99.github.io" target="_blank" rel="noopener">返回首页</a><br>6.多级标题<br>除了文章标题 两个井号代表一级目录 三个井号代表二级目录，以此类推。目录名与井号之间有一个空格</p>
+<h2 id="音乐插入"><a href="#音乐插入" class="headerlink" title="音乐插入"></a>音乐插入</h2><p>Makdown音乐视频通用方法，iframe标签,链接从网易云音乐获取<br>进入网易云音乐官网，选一首音乐，点击生成外链接，选择iframe就可以了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe frameborder=<span class="string">"no"</span> border=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> width=330 height=450 src=<span class="string">"//music.163.com/outchain/player?type=0&amp;id=2021829654&amp;auto=1&amp;height=430"</span>&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
 
+<p>下面是自动播放的，如果不需要自动播放，在选择时把自动播放的勾勾取消就行啦</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="//music.163.com/outchain/player?type=0&id=2021829654&auto=1&height=430"></iframe>
+
+<h2 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h2><p>放入哔哩哔哩视频,登录B站，找一个可以转载的视频，点击分享，找到分享的链接,找到aid和cid，将以下代码的aid和cid替换即可，因为原生的B站链接视频比较丑。以下样式是调试好了的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=<span class="string">"//player.bilibili.com/player.html?aid=62421509&amp;cid=108486609&amp;page=1"</span> scrolling=<span class="string">"no"</span> border=<span class="string">"0"</span> frameborder=<span class="string">"no"</span> framespacing=<span class="string">"0"</span> allowfullscreen=<span class="string">"true"</span>&gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<iframe src="//player.bilibili.com/player.html?aid=62421509&cid=108486609&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="95%" height="450">
+</iframe>
+
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这次分享了关于yilia主题的一些配置和博文的一些操作，包括音乐和视频的插入，其他方法插入音乐视频的，像什么通过Hexo插件来实现的，我将链接放入下面鸣谢中。留言评论功能暂时不需要，主要是我自己看的博文，就不想费心思去加了。下面我就开始自己的学习历程，关于主题的配置就暂时告一段落了。</p>
+<h2 id="参考和鸣谢"><a href="#参考和鸣谢" class="headerlink" title="参考和鸣谢"></a>参考和鸣谢</h2><p>1.<a href="https://www.cnblogs.com/artoriax/p/10364915.html" target="_blank" rel="noopener">https://www.cnblogs.com/artoriax/p/10364915.html</a><br>2.<a href="https://www.jianshu.com/p/8e1cf1ca131b" target="_blank" rel="noopener">https://www.jianshu.com/p/8e1cf1ca131b</a></p>
+<pre><code>作者：郑鸿辉 学号：1716040322</code></pre>
       
 
       
@@ -242,6 +258,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -292,7 +319,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/29/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/19/yilia主题的基本配置-二/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,15 +333,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/30/我的第一篇博客文章/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          我的第一篇博客文章
-        
-      </div>
-    </a>
   
+    <a href="/2019/08/14/yilia主题的基本配置-一/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">yilia主题的基本配置(一)</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -339,7 +362,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#访问量统计"><span class="toc-number">1.</span> <span class="toc-text">访问量统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码显示和文本超链接"><span class="toc-number">2.</span> <span class="toc-text">代码显示和文本超链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#音乐插入"><span class="toc-number">3.</span> <span class="toc-text">音乐插入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插入视频"><span class="toc-number">4.</span> <span class="toc-text">插入视频</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">5.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考和鸣谢"><span class="toc-number">6.</span> <span class="toc-text">参考和鸣谢</span></a></li></ol>
                     </div>
                 </span>
             </div>
