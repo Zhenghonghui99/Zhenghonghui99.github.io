@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/8 | CODE辉博客</title>
+  <title>Python快速入门(1) | CODE辉博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,13 +23,20 @@
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CODE辉博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
+  <meta name="description" content="主要介绍python的来源，版本比较，安装，执行过程介绍等">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python快速入门(1)">
+<meta property="og:url" content="http://yoursite.com/2019/09/02/Python快速入门-1/index.html">
 <meta property="og:site_name" content="CODE辉博客">
+<meta property="og:description" content="主要介绍python的来源，版本比较，安装，执行过程介绍等">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/09/02/Python快速入门-1/python%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%9B%BE.jpg">
+<meta property="og:updated_time" content="2019-09-02T15:57:34.215Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CODE辉博客">
+<meta name="twitter:title" content="Python快速入门(1)">
+<meta name="twitter:description" content="主要介绍python的来源，版本比较，安装，执行过程介绍等">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/02/Python快速入门-1/python%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%9B%BE.jpg">
   
     <link rel="alternative" href="/atom.xml" title="CODE辉博客" type="application/atom+xml">
   
@@ -169,140 +176,222 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python快速入门-1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python快速入门(1)
+    </h1>
+  
+
+        
+        <a href="/2019/09/02/Python快速入门-1/" class="archive-article-date">
+  	<time datetime="2019-09-02T15:06:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+</a>
+        
+      </header>
+      <div align="center" class="post-count">
+字数：1,078字 | 预计阅读时长：4分钟
+      </div>
+      <div align="center">
+      <span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+      </div>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>主要介绍python的来源，版本比较，安装，执行过程介绍等</p>
+<a id="more"></a>
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="Python概述"><a href="#Python概述" class="headerlink" title="Python概述"></a>Python概述</h3><p>1.Python的创始人是Guido van Rossum(简称基多)，荷兰人，为了打发圣诞节的无趣开发的脚本解释语言，Python意为蟒蛇，强大的抓取力。</p>
+<p>2.Python的特点<br>(1)简单易学，可以编写伪代码。<br>(2)免费开源，P2.x可免费用到2020年，P3.x需要版权费，我们学习的时候可以使用破解版的P3.x版本。<br>(3)可移植性(跨平台)，Python可以不用修改，就能在多个平台运行，包括Linux，windows，Mac os等。<br>(4)面向对象。<br>(5)有丰富的库。</p>
+<p>3.Python的应用领域<br>(1)Web应用开发. (2)操作系统管理，服务器运维的自动化脚本. (3)科学计算. (4)桌面软件. (5)服务器软件(网络软件). (6)游戏开发. (7)构思实现，产品早期原型和迭代</p>
+<h3 id="Python的版本"><a href="#Python的版本" class="headerlink" title="Python的版本"></a>Python的版本</h3><p>目前Python的主要版本是P2.x和P3.x,下面我就来介绍一下P2.x和P3.x之间的区别。<br>1.在P3.x中用print函数代替了P2.x中的print语句，示例代码：<br>P2.x</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="built_in">print</span> 3,4</span><br><span class="line">3,4</span><br></pre></td></tr></table></figure>
+
+<p>p3.x</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(3,4)</span><br><span class="line">3 4</span><br></pre></td></tr></table></figure>
+
+<p>–<br>2.P3.x中使用的字符编码集为UTF-8，字符串只包含str一种类型.  P2.x中字符串包含两种类型:使用ASCII的str和Unicode.</p>
+<p>3.除法运算<br>(1)运算符 /<br>P2.x中整数与整数相除结果为一个整数，浮点数相除结果为浮点数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; 1/2</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt;1.0/2.0</span><br><span class="line">0.5</span><br></pre></td></tr></table></figure>
+
+<p>P3.x中整数相除也得浮点数</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; 1/2</span><br><span class="line">0.5</span><br></pre></td></tr></table></figure>
+
+<p>(2)运算符 //<br>“//“称为floor运算，这种除法得到的结果都是向下取整，即返回不大于结果值的最大整数，P2.x与P3.x的floor运算方式一致。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; -1//2</span><br><span class="line">-1</span><br></pre></td></tr></table></figure>
+
+<p>4.异常<br>(1).P2.x中异常对象直接抛出，P3.x中只有继承BaseException类对象的才能抛出<br>(2).P2.x中捕获异常语法为”except Exception，var”. P3.x中引入as关键字，捕获异常语法为”except Exception as var”.<br>(3).P2.x中抛出异常的语句”raise Excepion, args” 语句,P3.x中抛出异常使用 “raise Exception(args)”语句.<br>(4).P3.x中取消了异常类的序列行为和.message属性.<br>P2.x处理异常示例代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; try</span><br><span class="line">     ···      raise TypeError,  <span class="string">"类型错误"</span></span><br><span class="line">     ···   except  TypeError， err:</span><br><span class="line">     ···      <span class="built_in">print</span> err.massage      </span><br><span class="line">     ···</span><br><span class="line">     ··· </span><br><span class="line">类型错误</span><br></pre></td></tr></table></figure>
+
+<p>P3.x处理异常示例代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; try</span><br><span class="line">···         raise TypeError(<span class="string">"类型错误"</span>)</span><br><span class="line">···      except TypeError as err:</span><br><span class="line">···         <span class="built_in">print</span>(err)</span><br><span class="line">···</span><br><span class="line">···</span><br><span class="line">类型错误</span><br></pre></td></tr></table></figure>
+
+<p>5.八进制面量表示<br>P2.x中521可以用0o1000和01000来表示，但在P3.x中只能用0o1000表示。</p>
+<p>6.不等于符号<br>P2.x中不等于符号有两种写法：!= 和&lt;&gt;. P3.x中只有!=一种写法。</p>
+<p>7.数据类型<br>(1).P3.x中整形只包括int类型，去掉了P2.x中的long类型。<br>(2).P3.x中新增bytes类型(字节类型),对应P2.x中的八位串。<br>(3).P3.x中，字典的keys(), items()和values()方法用返回视图代替列表，P2.x中的iterkeys()等函数被废弃，has_key()方法，用in代替</p>
+<p>##3  Python程序执行原理<br>程序员编写源代码文件m.py,通过python解释器将源码转为字节码，生成m.pyc文件,m.pyc可以在Python虚拟机(PVM)上运行.<br><img src="/2019/09/02/Python快速入门-1/python%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%9B%BE.jpg" alt="python执行过程"><br>PS:字节码文件不是二进制的机器码，是特定的Python表示形式，PVM是Python的运行引擎，是Python系统的一部分。</p>
+<h3 id="python的安装"><a href="#python的安装" class="headerlink" title="python的安装"></a>python的安装</h3><p><a href="https://www.python.org/" target="_blank" rel="noopener">Python官网</a><br><a href="https://docs.python.org/3/download.html" target="_blank" rel="noopener">python文档下载地址</a><br>其他步骤参考网上教程</p>
+<h3 id="Python解释器"><a href="#Python解释器" class="headerlink" title="Python解释器"></a>Python解释器</h3><p>Python的交互式解释器称为shell。Ipython 是一个 python 的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。<br>安装Ipython的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install ipython</span><br></pre></td></tr></table></figure>
+
+<h3 id="集成开发环境-PyCharm"><a href="#集成开发环境-PyCharm" class="headerlink" title="集成开发环境-PyCharm"></a>集成开发环境-PyCharm</h3><p><a href="http://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">Pycharm官网</a></p>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>本篇就主要介绍了python语言的特点和应用领域，重点是P2.x和P3.x的区别，Python的下载，解释器Ipython与标准的shell相比性能优良，Python IDE的介绍安装PyCharm，入门了解一下，后面会介绍Python的基础语法</p>
+<pre><code>作者：郑鸿辉</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/19/yilia主题的基本配置-二/" class="archive-article-date">
-  	<time datetime="2019-08-19T15:24:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/19/yilia主题的基本配置-二/">yilia主题的基本配置(二)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/02/Python快速入门-1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/14/yilia主题的基本配置-一/" class="archive-article-date">
-  	<time datetime="2019-08-13T20:42:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/19/yilia主题的基本配置-二/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">yilia主题的基本配置(二)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/14/yilia主题的基本配置-一/">yilia主题的基本配置(一)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章"><span class="toc-number">1.</span> <span class="toc-text">第一章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Python概述"><span class="toc-number">1.1.</span> <span class="toc-text">Python概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python的版本"><span class="toc-number">1.2.</span> <span class="toc-text">Python的版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#python的安装"><span class="toc-number">1.3.</span> <span class="toc-text">python的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python解释器"><span class="toc-number">1.4.</span> <span class="toc-text">Python解释器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#集成开发环境-PyCharm"><span class="toc-number">1.5.</span> <span class="toc-text">集成开发环境-PyCharm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#后记"><span class="toc-number">1.6.</span> <span class="toc-text">后记</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/05/学习HEXO的体会/" class="archive-article-date">
-  	<time datetime="2019-08-04T17:00:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-05</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/05/学习HEXO的体会/">学习HEXO的体会</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -332,8 +421,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
