@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | CODE辉博客</title>
+  <title>JDK+Eclipse+Maven安装配置 | CODE辉博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,17 +23,36 @@
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="本文主要介绍 JDK1.8及Eclipse和依赖管理工具Maven的安装与配置">
+<meta name="keywords" content="JDK,Eclipse,Maven">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/07/29/hello-world/index.html">
+<meta property="og:title" content="JDK+Eclipse+Maven安装配置">
+<meta property="og:url" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/index.html">
 <meta property="og:site_name" content="CODE辉博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="本文主要介绍 JDK1.8及Eclipse和依赖管理工具Maven的安装与配置">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-17T20:06:35.097Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_3.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_4.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_5.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_6.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_7.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_8.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_9.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Ceclipse_1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_3.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_4.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_5.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_6.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_7.jpg">
+<meta property="og:updated_time" content="2019-09-09T16:23:29.679Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="JDK+Eclipse+Maven安装配置">
+<meta name="twitter:description" content="本文主要介绍 JDK1.8及Eclipse和依赖管理工具Maven的安装与配置">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="CODE辉博客" type="application/atom+xml">
   
@@ -173,25 +192,25 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JDK-Eclipse-Maven安装配置" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      JDK+Eclipse+Maven安装配置
     </h1>
   
 
         
-        <a href="/2019/07/29/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-29T14:14:35.784Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-29</time>
+        <a href="/2019/09/09/JDK-Eclipse-Maven安装配置/" class="archive-article-date">
+  	<time datetime="2019-09-09T15:57:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-09</time>
 </a>
         
       </header>
       <div align="center" class="post-count">
-字数：78字 | 预计阅读时长：1分钟
+字数：1,479字 | 预计阅读时长：6分钟
       </div>
       <div align="center">
       <span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
@@ -199,21 +218,40 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <p>本文主要介绍 JDK1.8及Eclipse和依赖管理工具Maven的安装与配置</p>
 <a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="第一章-JDK的安装"><a href="#第一章-JDK的安装" class="headerlink" title="第一章 JDK的安装"></a>第一章 JDK的安装</h2><p>1.首先准备相关软件，我用的是JDK1.8+eclipse(2018-12)+apache-maven3.6.1,<a href="https://pan.baidu.com/s/1nIycqHXQ4qKV7yfhZLzLEg" target="_blank" rel="noopener">相关资源地址</a>.JDK1.8在eclipse压缩包内，大家也可以自行到官网下载。<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_1.jpg" alt="java1"><br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_2.jpg" alt="java2"></p>
+<p>2.首先进行JDK的安装，解压压缩包，进入到JDK1.8文件夹中双击运行，在选择安装的时候可以更改安装的目录，JDK默认安装在C盘，点击下图的更改，可以自定义安装目录，，我在D盘新建了一个JDK1.8的文件夹，将JDK安装在这，后续的java也安装在此目录即可。<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_3.jpg" alt="java3"></p>
+<p>3.JDK安装好后，进行环境变量的配置，包括JAVA_HOME、CLASSPATH、Path。<br>点击我的电脑-&gt;鼠标右键-&gt;属性-&gt;高级系统设置-&gt;点击环境变量，在弹出的环境变量窗口的系统变量栏点击新建<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_4.jpg" alt="java4"><br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_5.jpg" alt="java5"></p>
+<p>3.1   变量名：JAVA_HOME，变量值：浏览你刚才将JDK安装的目录,我安装在D盘的JDK1.8文件夹，然后点击确定即可。<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_6.jpg" alt="java6"></p>
+<p>3.2   同样在系统变量栏点击新建，变量名：CLASSPATH，变量值： .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar，然后点确定。<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_7.jpg" alt="java7"></p>
+<p>3.3   配置系统Path变量，在系统变量栏中选择Path变量，进入，点击新建，输入  %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;  然后确定即可。<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_8.jpg" alt="java8"></p>
+<p>4.检查是否配置成功，WIN+R输入cmd，打开cmd ，输入java -version，如果显示出JDK版本信息，则表示已经安装配置成功，如果显示无法识别的命令(没有配置成功)，百度上有丰富的解决办法。<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cjava_9.jpg" alt="java9"></p>
+<h2 id="第二章-Eclipse的安装"><a href="#第二章-Eclipse的安装" class="headerlink" title="第二章 Eclipse的安装"></a>第二章 Eclipse的安装</h2><p>如果大家JDK配置成功，进入到eclipse文件夹中点击eclipse.exe即可运行<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Ceclipse_1.jpg" alt="eclipse1"></p>
+<h2 id="第三章-Maven的安装"><a href="#第三章-Maven的安装" class="headerlink" title="第三章 Maven的安装"></a>第三章 Maven的安装</h2><p>在JDK安装成功的条件下安装<br>一、Maven项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的项目管理工具软件。<br>最常用功能：管理依赖、插件、创建项目、发布项目等<br>2.在实际开发中，我们要用到第三方的jar包，如何查找和使用正确的，能够满足我们开发需求的第三发jar包呢？<br>例如：Spring8个架包: Spring框架依赖那些jar包,怎么找？<br>怎么解决管理这些相互依赖架包(.jar)的东西？<br>Mavean，通过简短的关键词，能从云端找这些.jar，创建项目，发布项目,在网站上。</p>
+<p>二、.首先配置Mavean<br>关于jar包存储的位置，中央仓库-镜像仓库-本地仓库(方便寻找)<br>1.Maven从哪个镜像获取，要先配置镜像仓库，根据配置文档配置在Conf mioor<br>2.创建本地仓库 在conf文件中配置localRepository</p>
+<p>1.将maven压缩包解压，我在D盘新建一个Maven文件夹，将maven解压到该文件夹下，将maven文件夹的apache-maven3.6.1解压即可</p>
+<p>2.配置环境变量 创建MAVEN_HOME=D:\Mavean\maven\apache-maven-3.6.1<br>在系统变量Path中新建添加%MAVEN_HOME%\bin<br>安装好后再cmd下使用mvn -v查看当前版本，提示不是内部命令检查自己的环境变量是否配置正确，这里请参考jdk的安装</p>
+<p>3.然后进入Eclipse中Windows-preference-Maven-Installations-add,添加一个路径，即你Maven安装的路径即可(D:\Mavean\maven\apache-maven-3.6.1)，apply然后选上勾<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_1.jpg" alt="maven1"></p>
+<p>4.进入maven\apache-maven-3.6.1的conf文件中的settings，配置一下两串代码，其中settings是xml文件，可以使用<a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener">notepad++</a>打开，这款软件是免费的，</p>
+<p>4.1.创建本地仓库<br>maven\apache-maven-3.6.1在conf文件中的settings配置localRepository<br>配置本地仓库，这样就不用每次都到网上下载，我在E盘新建了一个E:/Maven/mavenStone，将该目录作为本地仓库，所有从镜像中下载的jar包都保存一份在这里。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;E:/Maven/mavenStone(你想创建本地仓库的路径)&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_2.jpg" alt="maven2"></p>
+<p>4.2配置镜像文件仓库，在conf文件中的settings配置mirror</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 阿里云仓库 --&gt;</span><br><span class="line">       &lt;mirror&gt;</span><br><span class="line">           &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">           &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">           &lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">           &lt;url&gt;https://maven.aliyun.com/repository/central/&lt;/url&gt;</span><br><span class="line">       &lt;/mirror&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>配置好后保存ctrl+s<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_3.jpg" alt="maven3"></p>
+<p>5.然后在点击eclipse-window-preferences-User Settings进行Global setting的配置，选择之前配置好的settings文件位置，查看一下local  repository是否是自己的本地仓库<br>然后apply and close<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_4.jpg" alt="maven4"></p>
+<p>6.创建maven项目，添加Maven的依赖<br>eclipse中File-new-other-Maven-mavenProject，千万不要将Maven的workspace指到Eclipse的workSpace，否则无法创建项目,重新弄个新的文件夹：如我创建了一个在E：Maven\maven_workspace<br>勾选Create  a simple project-&gt;next<br>填写下面几项即可<br>grourp ID:组织单位或公司域名： glice.edu.cn<br>Arifact ID 项目名：mavenTestProject<br>version ID<br>坐标（G,A,V）指明架包位置<br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_5.jpg" alt="maven5"><br><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_6.jpg" alt="maven6"></p>
+<p>7.创建好Maven项目后，在pom.xml中添加依赖的信息，<br>在浏览器搜索maven一般选第一个进入网站<a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven</a>，搜索关键词 如Mysql ，选择相应版本，将复制的maven的信息放入Eclipse中pom.xml中的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;project&gt;</span><br><span class="line">&lt;dependencies&gt;</span><br><span class="line">&lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;6.0.6&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+<p><img src="/2019/09/09/JDK-Eclipse-Maven安装配置/%5Cimgs%5Cmaven_7.jpg" alt="maven7"></p>
+<p>保存ctrl+s然后等会 在eclipse的maven项目中会出现添加的MYsql依赖</p>
+<p>8.如何在一般工程项目，添加maven pom，项目名上点击右键-&gt;找到【Configure】-&gt;【Convert to Maven project】,依次输入<br>groupId<br>ArtifactId<br>versionId<br>即可<br>8.上面说了如何在maven项目中使用maven添加jar包，当你没有配置maven时的常规手动添加jar包，<a href="https://jingyan.baidu.com/article/ca41422fc76c4a1eae99ed9f.html" target="_blank" rel="noopener">详细过程</a></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>本文详细介绍了JDK以及依赖管理工具Maven的安装与配置,以及在一般项目中添加maven进行依赖管理和手动导入jar包</p>
+<pre><code>作者:郑鸿辉</code></pre>
       
 
       
@@ -242,6 +280,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JDK</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Eclipse</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -292,7 +349,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/29/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/09/JDK-Eclipse-Maven安装配置/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,15 +363,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/30/我的第一篇博客文章/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          我的第一篇博客文章
-        
-      </div>
-    </a>
   
+    <a href="/2019/09/02/Python快速入门-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python快速入门(1)</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -339,7 +392,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章-JDK的安装"><span class="toc-number">1.</span> <span class="toc-text">第一章 JDK的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二章-Eclipse的安装"><span class="toc-number">2.</span> <span class="toc-text">第二章 Eclipse的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三章-Maven的安装"><span class="toc-number">3.</span> <span class="toc-text">第三章 Maven的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a></li></ol>
                     </div>
                 </span>
             </div>
