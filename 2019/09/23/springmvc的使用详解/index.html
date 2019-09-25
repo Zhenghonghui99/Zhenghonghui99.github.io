@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Eclipse | CODE辉博客</title>
+  <title>springmvc的使用详解 | CODE辉博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,13 +23,28 @@
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CODE辉博客">
-<meta property="og:url" content="http://yoursite.com/tags/Eclipse/index.html">
+  <meta name="description" content="本文主要介绍springMVC的使用，从理解springmvc到搭建配置进行实测的介绍">
+<meta name="keywords" content="springmvc,java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="springmvc的使用详解">
+<meta property="og:url" content="http://yoursite.com/2019/09/23/springmvc的使用详解/index.html">
 <meta property="og:site_name" content="CODE辉博客">
+<meta property="og:description" content="本文主要介绍springMVC的使用，从理解springmvc到搭建配置进行实测的介绍">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_3.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_4.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_5.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_6.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_7.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_8.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_9.jpg">
+<meta property="og:updated_time" content="2019-09-25T17:44:42.752Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CODE辉博客">
+<meta name="twitter:title" content="springmvc的使用详解">
+<meta name="twitter:description" content="本文主要介绍springMVC的使用，从理解springmvc到搭建配置进行实测的介绍">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/23/springmvc的使用详解/mvc_1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="CODE辉博客" type="application/atom+xml">
   
@@ -169,68 +184,215 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-springmvc的使用详解" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/09/JDK-Eclipse-Maven安装配置/" class="archive-article-date">
-  	<time datetime="2019-09-09T15:57:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/09/JDK-Eclipse-Maven安装配置/">JDK+Eclipse+Maven安装配置</a>
+    <h1 class="article-title" itemprop="name">
+      springmvc的使用详解
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/09/23/springmvc的使用详解/" class="archive-article-date">
+  	<time datetime="2019-09-22T17:05:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-23</time>
+</a>
+        
+      </header>
+      <div align="center" class="post-count">
+字数：1,594字 | 预计阅读时长：7分钟
+      </div>
+      <div align="center">
+      <span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+      </div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文主要介绍springMVC的使用，从理解springmvc到搭建配置进行实测的介绍</p>
+<a id="more"></a>
+
+
+<h2 id="第一章-什么是SpringMVC？"><a href="#第一章-什么是SpringMVC？" class="headerlink" title="第一章 什么是SpringMVC？"></a>第一章 什么是SpringMVC？</h2><p>一，首先是一个MVC框架。</p>
+<p>在web模型中，MVC是一种很流行的框架，通过把Model，View，Controller分离，把较为复杂的web应用分成逻辑清晰的几部分，是为了简化开发，减少出错。还是为了组内开发人员之间的配合。总之就是一种分层工作的办法。</p>
+<p>二，springMVC，是spring的一个子框架，当然拥有spring的特性，如依赖注入。</p>
+<p>三，springMVC的信息流是什么样的？</p>
+<p>首先用户通过HTTP请求到服务器，服务器会根据你的url来将请求转到不同的控制器Controller。<br>这是第一步，具体需要做的是在web.xml中设置URLpattern映射到spring的DispatcherServlet，这是控制器是负责第一道处理，用来转发请求的，它会将请求转发到合适的Controller上。那么问题来了，它是根据什么转发呢？这个问题有些混乱，原因是springMVC一直在升级，不断贡献新的url到Controller的映射方法。<br>但是万变不离其宗，不管如何变，它的目的都不变，就是设法建立url到Controller的映射，找到这个目的之后，看起来就容易一些。</p>
+<h2 id="第二章-搭建springMVC"><a href="#第二章-搭建springMVC" class="headerlink" title="第二章 搭建springMVC"></a>第二章 搭建springMVC</h2><p>1.打开eclipse EE通过创建Maven项目进行，2.通过创建一般的WEB项目，点击next，点生成web.xml（核心文件）再完成。<br>2.介绍web项目结构<br>多了WebContent，该文件下创建.jsp文件，点击菜单栏中的Window，更改charset为utf-8，Window下prefence的web项可以更改jsp文件的默认字符集，下有Meta-inf(暂时不用管)和Web-inf，在Web-inf下的lib添加相应的依赖jar包，再Web-inf下新建jsp的文件夹用于存放jsp文件，web.xml进行配置，<br><img src="/2019/09/23/springmvc的使用详解/mvc_1.jpg" alt="图1"><br>3.window配置server，选择相对的tomcat版本（64、32），runtime enviroment加入tomcat路径路径不要太深，选择jre版本（1.8），然后进入tomact的conf文件夹下修改server.xml的端口为8081大约在65行，保存，进入bin文件加下，运行startup.exe启动服务器<br>进入eclipse点击sever命令台，将项目发布到服务器上，点击运行查看。<br><img src="/2019/09/23/springmvc的使用详解/mvc_2.jpg" alt="图2"><br>javaResource放置java文件，删掉原来的文件夹，创建4个source文件分别为src\main\java  scr\mian\resource scr\test\java src\test\resource ,java放源文件 resource放资源文件。<br>4.配置web.xml.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 配置DispatcherServlet --&gt;</span><br><span class="line">&lt;servlet&gt;</span><br><span class="line">    &lt;servlet-name&gt;springDispatcherServlet&lt;/servlet-name&gt;</span><br><span class="line">    &lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;</span><br><span class="line">    &lt;!-- SpringMVC的配置文件所在的位置和名称 --&gt;</span><br><span class="line">    &lt;init-param&gt;</span><br><span class="line">        &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;</span><br><span class="line">      &lt;!--框架进行转发规则的定义文件--&gt;</span><br><span class="line">        &lt;param-value&gt;classpath:springmvc.xml&lt;/param-value&gt;</span><br><span class="line">    &lt;/init-param&gt;</span><br><span class="line">    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</span><br><span class="line">&lt;/servlet&gt;</span><br><span class="line">&lt;servlet-mapping&gt;</span><br><span class="line">    &lt;servlet-name&gt;springDispatcherServlet&lt;/servlet-name&gt;</span><br><span class="line">    &lt;!-- SpringMVC拦截所有请求，再进行转发 --&gt;</span><br><span class="line">    &lt;url-pattern&gt;/&lt;/url-pattern&gt;</span><br><span class="line">&lt;/servlet-mapping&gt;</span><br></pre></td></tr></table></figure>
+
+<p>5.创建一个xml文件在src\main\resource中为springmvc.xml.</p>
+<p>springmvc.xml</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</span><br><span class="line">&lt;beans xmlns=<span class="string">"http://www.springframework.org/schema/beans"</span></span><br><span class="line">    xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">    xmlns:context=<span class="string">"http://www.springframework.org/schema/context"</span></span><br><span class="line">    xmlns:mvc=<span class="string">"http://www.springframework.org/schema/mvc"</span></span><br><span class="line">    xsi:schemaLocation=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd</span></span><br><span class="line"><span class="string">        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd</span></span><br><span class="line"><span class="string">        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd"</span>&gt;                    </span><br><span class="line"></span><br><span class="line">    &lt;!-- scan the package and the sub package --&gt;</span><br><span class="line">    &lt;context:component-scan base-package=<span class="string">"com.springmvc.controller"</span>/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- don<span class="string">'t handle the static resource --&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &lt;mvc:default-servlet-handler/&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &lt;!-- if you use annotation you must configure following setting --&gt;</span></span><br><span class="line"><span class="string">  &lt;mvc:annotation-driven&gt;&lt;/mvc:annotation-driven&gt;</span></span><br><span class="line"><span class="string">    &lt;!-- configure the InternalResourceViewResolver --&gt;</span></span><br><span class="line"><span class="string">    &lt;bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" </span></span><br><span class="line"><span class="string">            id="internalResourceViewResolver"&gt;</span></span><br><span class="line"><span class="string">        &lt;!-- 前缀 --&gt;</span></span><br><span class="line"><span class="string">        &lt;property name="prefix" value="/WEB-INF/jsp/" /&gt;</span></span><br><span class="line"><span class="string">        &lt;!-- 后缀 --&gt;</span></span><br><span class="line"><span class="string">        &lt;property name="suffix" value=".jsp" /&gt;</span></span><br><span class="line"><span class="string">    &lt;/bean&gt;</span></span><br><span class="line"><span class="string">&lt;/beans&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在src\main\java\com\springmvc\contorller下创建一个控制器映射方法HelloWorld.java<br><img src="/2019/09/23/springmvc的使用详解/mvc_3.jpg" alt="图3"><br>映射的类名<br>@RequestMapping(“/helloWorld”)<br>映射对应的方法名<br>@RequestMapping(“/hello”)</p>
+<p>HelloWorld.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.stereotype.Controller;</span><br><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"></span><br><span class="line">@Controller</span><br><span class="line">@RequestMapping(<span class="string">"/helloWorld"</span>)</span><br><span class="line">public class HelloWorld &#123;</span><br><span class="line">    /**</span><br><span class="line">     * 1. 使用RequestMapping注解来映射请求的URL，写在方法上面，一个请求对应一个方法</span><br><span class="line">     * 2. 返回值会通过视图解析器解析为实际的物理视图, 会做如下解析</span><br><span class="line">     * 通过prefix+returnVal+suffix 这样的方式得到实际的物理视图，然后会转发操作  这里的prifix和suffix在springmvc下值为value=<span class="string">"/WEB-INF/jsp/</span></span><br><span class="line"><span class="string">     * suffix值为value="</span>.jsp<span class="string">"</span></span><br><span class="line"><span class="string">     * "</span>/WEB-INF/views/success.jsp<span class="string">"</span></span><br><span class="line"><span class="string">     */</span></span><br><span class="line"><span class="string">    @RequestMapping("</span>/hello<span class="string">")</span></span><br><span class="line"><span class="string">     public String hello()&#123;</span></span><br><span class="line"><span class="string">        System.out.println("</span>hello world<span class="string">");</span></span><br><span class="line"><span class="string">        return "</span>success<span class="string">";  ///WEB-INF/jsp/success.jsp</span></span><br><span class="line"><span class="string">     &#125;</span></span><br><span class="line"><span class="string">    @RequestMapping("</span>/gologin<span class="string">")</span></span><br><span class="line"><span class="string">    public String gologin(String username, String password)</span></span><br><span class="line"><span class="string">    &#123;</span></span><br><span class="line"><span class="string">    	System.out.println(username+"</span>,<span class="string">"+password);</span></span><br><span class="line"><span class="string">    	return "</span>Login<span class="string">";</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中return返回的是一个jsp页面，所以需要创建相应名称的.jsp文件<br><img src="/2019/09/23/springmvc的使用详解/mvc_4.jpg" alt="图4"><br>6.在前端的表单标签的action表示提交表单触发的方法名，下面action=”gologin”表示提交表单触发HelloWorld中的gologin()<br>Login.jsp</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=<span class="string">"gologin"</span>&gt;</span><br><span class="line">&lt;table&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;用户名：&lt;/td&gt;</span><br><span class="line">&lt;td&gt;&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"username"</span> value=<span class="string">"请输入用户名"</span>&gt;&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;密码:&lt;/td&gt;</span><br><span class="line">&lt;td&gt;&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> name=<span class="string">"password"</span> value=<span class="string">"请输入密码"</span>&gt;&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;&lt;input <span class="built_in">type</span>=<span class="string">"submit"</span> value=<span class="string">"登录"</span>&gt;&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p>7.后台接收前端数据，为前端的控件设置name属性，在对应的方法(action=controller的@requstMappping(“xxxx”))中参数类型，传入一定要与前端控件名相同.还有其他的传参数方法，大家可以到网上查询<br><img src="/2019/09/23/springmvc的使用详解/mvc_5.jpg" alt="图片5"><br><img src="/2019/09/23/springmvc的使用详解/mvc_6.jpg" alt="图片6"><br>8.将springmvc项目add到tomcat服务器上运行，然后再网页上输入(localhost:8080/springmvc/helloWorld/gologin),在8080端口查看，其中springmvc是项目名，helloWorld是映射的控制器名，gologin是映射的控制器中的方法名<br><img src="/2019/09/23/springmvc的使用详解/mvc_7.jpg" alt="图片7"><br><img src="/2019/09/23/springmvc的使用详解/mvc_8.jpg" alt="图片8"><br>然后再文本框中输入一些数据，点击登录，触发form中action=gologin，找到相应的controller中的方法来执行，即将输入的两个文本框的数值通过参数传入到controller中方法，方法中有打印两个参数的，再到eclipse的控制台可以看见。<br><img src="/2019/09/23/springmvc的使用详解/mvc_9.jpg" alt="图片9"><br>到此springmvc的框架的搭建和简单应用就介绍完了。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>在web.xml中init_param中一定要写明框架进行转发规则的定义文件param-value的classpath:(你创建的springmvc.xml名)。springmvc.xml中按默认的配置就好，相应的cotorller要写好@RequestMapping映射，转化为url.</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://blog.csdn.net/zhaohongyan6/article/details/71078051" target="_blank" rel="noopener">对springMVC的理解，什么是springMVC</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JDK</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">springmvc</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Eclipse</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/23/springmvc的使用详解/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/09/10/mybatis的使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">mybatis的使用</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章-什么是SpringMVC？"><span class="toc-number">1.</span> <span class="toc-text">第一章 什么是SpringMVC？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二章-搭建springMVC"><span class="toc-number">2.</span> <span class="toc-text">第二章 搭建springMVC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">3.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">4.</span> <span class="toc-text">参考文献</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -260,9 +422,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
