@@ -63,7 +63,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_29.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_30.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_31.jpg">
-<meta property="og:updated_time" content="2019-11-10T06:17:13.625Z">
+<meta property="og:updated_time" content="2019-11-10T11:20:38.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos7 Hadoop集群搭建">
 <meta name="twitter:description" content="本篇超详细文章，从虚拟机的克隆，到Hadoop集群的准备再到Hadoop集群的安装部署，最后的集群测试。再说明一下，文档目录再右下角，有一个放大镜一样的标记，鼠标移过去就可以检索文章目录，hadoop集群所需资源链接我都放在文档末尾。环境：Centos7">
@@ -225,7 +225,7 @@
         
       </header>
       <div align="center" class="post-count">
-字数：3,149字 | 预计阅读时长：13分钟
+字数：3,199字 | 预计阅读时长：13分钟
       </div>
       <div align="center">
       <span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
@@ -257,7 +257,7 @@
 <p>在实际开发中，开发人员会用到一个远程连接工具来连接访问目标服务器，SecureCRT远程连接工具，资源连接在文档末尾。<br>打开SecureCRT远程连接工具，单机导航栏上的File(文件)-Quick Connect(快速链接)，并根据虚拟机的配置信息进行设置，然后点击connect即可<br><img src="/2019/11/10/Centos7-Hadoop集群搭建/SecureCRT_1.jpg" alt="Secure_1"></p>
 <p>然后弹出一个对话框，点击Accept &amp; Save(接受并保存),然后让你输入目标的用户名和密码，一定要勾选上Save password，避免下次连接重复输入密码。</p>
 <ol start="2">
-<li>SSH免密登录功能配置<br>建立每个主机的远程连接后，需要进行ssh免密登录配置，这里只配置主节点hadoop01到hadoop02、hadoop03的单向免密配置.<br>(1）在hadoop01主节点上输入ssh-keygen -t rsa,然后连续按4下空格，在虚拟机的root目录下生成一个包含密匙的.ssh隐藏文件。<br><img src="/2019/11/10/Centos7-Hadoop集群搭建/hadoop_9.jpg" alt="hadoop_9"></li>
+<li>SSH免密登录功能配置<br>建立每个主机的远程连接后，需要进行ssh免密登录配置，这里只配置主节点hadoop01到hadoop02、hadoop03的单向免密配置.<br>(1）在hadoop01主节点上输入ssh-keygen -t rsa,然后连续按4下回车，在虚拟机的root目录下生成一个包含密匙的.ssh隐藏文件。<br><img src="/2019/11/10/Centos7-Hadoop集群搭建/hadoop_9.jpg" alt="hadoop_9"></li>
 </ol>
 <p>(2)进入到.ssh目录中 cd .ssh，将hadoop01的公钥复制到主机名为hadoop02的主机上：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id hadoop02</span><br></pre></td></tr></table></figure>
@@ -371,7 +371,7 @@
 <p>2.通过宿主机的浏览器分别访问(<a href="http://hadoop01:50070)(集群服务IP+端口号)和(http://hadoop01:8088)查看HDFS和YARN集群状态，效果如下：" target="_blank" rel="noopener">http://hadoop01:50070)(集群服务IP+端口号)和(http://hadoop01:8088)查看HDFS和YARN集群状态，效果如下：</a></p>
 <p><em>HDFS的UI</em><br><img src="/2019/11/10/Centos7-Hadoop集群搭建/hadoop_30.jpg" alt="hadoop_30"></p>
 <p><em>YARN的UI</em><br><img src="/2019/11/10/Centos7-Hadoop集群搭建/hadoop_31.jpg" alt="hadoop_31"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本篇文章主要详细介绍了hadoop集群的安装，我主要遇到问题是在配置hadoop核心文件的地方，由于粗心加了多余的代码，导致开启hadoop集群时，无法正常开启。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本篇文章主要详细介绍了hadoop集群的安装，我主要遇到问题是在配置hadoop核心文件的地方，由于粗心加了多余的代码，导致开启hadoop集群时，无法正常开启。还有一个就是脚本一键启动hadoop集群，我这里没有进行对每个节点进行配置双向SSH免密登录，大家可以自己去找教程参考。</p>
 <h2 id="资源链接"><a href="#资源链接" class="headerlink" title="资源链接"></a>资源链接</h2><p><a href="https://pan.baidu.com/s/14XraIPTEGyJt2Q3JUiE4oQ" target="_blank" rel="noopener">hadoop集群搭建所需资源包(jdk-8u221-linux-x64、hadoop-2.7.7、SecureCRT)</a></p>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://blog.csdn.net/Zz_xiaohuli_zZ/article/details/86151317?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">Centos7 hadoop集群搭建</a></p>
 
