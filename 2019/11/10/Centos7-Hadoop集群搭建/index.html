@@ -63,7 +63,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_29.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_30.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_31.jpg">
-<meta property="og:updated_time" content="2019-11-10T11:20:38.792Z">
+<meta property="og:updated_time" content="2019-11-19T09:28:43.253Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos7 Hadoop集群搭建">
 <meta name="twitter:description" content="本篇超详细文章，从虚拟机的克隆，到Hadoop集群的准备再到Hadoop集群的安装部署，最后的集群测试。再说明一下，文档目录再右下角，有一个放大镜一样的标记，鼠标移过去就可以检索文章目录，hadoop集群所需资源链接我都放在文档末尾。环境：Centos7">
@@ -302,7 +302,7 @@
 
 <p>这条命令使传输过去的配置文件生效，然后输入java -version查看JDK是否配置成功，至此JDK安装完毕。<br><img src="/2019/11/10/Centos7-Hadoop集群搭建/hadoop_20.jpg" alt="hadoop_20"></p>
 <h2 id="第三章-Hadoop集群的配置"><a href="#第三章-Hadoop集群的配置" class="headerlink" title="第三章 Hadoop集群的配置"></a>第三章 Hadoop集群的配置</h2><h3 id="3-1-hadoop的安装"><a href="#3-1-hadoop的安装" class="headerlink" title="3.1 hadoop的安装"></a>3.1 hadoop的安装</h3><p>终于终于到Hadoop的安装了，还记得配JDK之前，我拖了两个压缩包到hadoop01节点吗,还有一个压缩包就是我们的hadoop，所以我们直接解压缩到apps文件夹下即可。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxcf hadoop-2.7.7.tar.gz -C apps/</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf hadoop-2.7.7.tar.gz -C apps/</span><br></pre></td></tr></table></figure>
 
 <p>解压完成之后，我们就可以把这个压缩包删除掉了</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf hadoop-2.7.7.tar.gz</span><br></pre></td></tr></table></figure>
@@ -669,19 +669,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">springmvc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">springmvc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
