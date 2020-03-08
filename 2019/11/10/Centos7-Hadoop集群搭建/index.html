@@ -6,7 +6,7 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://yoursite">
   <title>Centos7 Hadoop集群搭建 | CODE辉博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -28,47 +28,47 @@
 <meta name="keywords" content="linux,centos7,hadoop">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Centos7 Hadoop集群搭建">
-<meta property="og:url" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/index.html">
+<meta property="og:url" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/index.html">
 <meta property="og:site_name" content="CODE辉博客">
 <meta property="og:description" content="本篇超详细文章，从虚拟机的克隆，到Hadoop集群的准备再到Hadoop集群的安装部署，最后的集群测试。再说明一下，文档目录再右下角，有一个放大镜一样的标记，鼠标移过去就可以检索文章目录，hadoop集群所需资源链接我都放在文档末尾。环境：Centos7">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_1.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_2.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_3.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_4.png">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_5.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_6.png">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_7.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_8.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/SecureCRT_1.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_9.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_10.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_11.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_12.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_13.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_14.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_15.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_16.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_17.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_18.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_19.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_20.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_21.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_22.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_24.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_23.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_25.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_26.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_27.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_28.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_29.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_30.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_31.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_1.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_2.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_3.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_4.png">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_5.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_6.png">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_7.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_8.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/SecureCRT_1.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_9.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_10.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_11.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_12.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_13.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_14.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_15.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_16.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_17.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_18.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_19.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_20.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_21.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_22.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_24.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_23.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_25.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_26.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_27.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_28.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_29.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_30.jpg">
+<meta property="og:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_31.jpg">
 <meta property="og:updated_time" content="2019-11-19T09:28:43.253Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos7 Hadoop集群搭建">
 <meta name="twitter:description" content="本篇超详细文章，从虚拟机的克隆，到Hadoop集群的准备再到Hadoop集群的安装部署，最后的集群测试。再说明一下，文档目录再右下角，有一个放大镜一样的标记，鼠标移过去就可以检索文章目录，hadoop集群所需资源链接我都放在文档末尾。环境：Centos7">
-<meta name="twitter:image" content="http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/hadoop_1.jpg">
+<meta name="twitter:image" content="https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/hadoop_1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="CODE辉博客" type="application/atom+xml">
   
@@ -113,9 +113,9 @@
 			</ul>
 		</nav>
 		<nav>
-               总文章数 11
+               总文章数 12
                 </nav>
-		<nav>总字数 <span class="post-count">12.8k</span>
+		<nav>总字数 <span class="post-count">15.5k</span>
                 </nav>
 		<nav class="header-smart-menu">
     		
@@ -473,7 +473,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/10/Centos7-Hadoop集群搭建/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite/2019/11/10/Centos7-Hadoop集群搭建/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -658,10 +658,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
@@ -686,15 +682,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">spring</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ssm</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mabatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">centos7</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mabatis</a>
               </li>
             
             <div class="clearfix"></div>

@@ -7,7 +7,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://yoursite">
-  <title>我的第一篇博客文章 | CODE辉博客</title>
+  <title>Spring的简单使用 | CODE辉博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -24,17 +24,28 @@
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="It is my first blog page,I remember it forever!">
+  <meta name="description" content="离之前更新ssm框架内容过去许久，经过一波三折我最终还是决定继续更新，本文主要介绍spring的核心，通过简单的入门程序对spring有一个基本的了解，spring容器可以通过注解实现也可以通过配置xml文件实现工具：eclipse+Maven  JDK1.8">
+<meta name="keywords" content="java,spring,ssm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="https://yoursite/2019/07/30/我的第一篇博客文章/index.html">
+<meta property="og:title" content="Spring的简单使用">
+<meta property="og:url" content="https://yoursite/2020/03/08/Spring的简单使用/index.html">
 <meta property="og:site_name" content="CODE辉博客">
-<meta property="og:description" content="It is my first blog page,I remember it forever!">
+<meta property="og:description" content="离之前更新ssm框架内容过去许久，经过一波三折我最终还是决定继续更新，本文主要介绍spring的核心，通过简单的入门程序对spring有一个基本的了解，spring容器可以通过注解实现也可以通过配置xml文件实现工具：eclipse+Maven  JDK1.8">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-17T20:14:30.926Z">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_0.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_1.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_2.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_3.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_4.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_5.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_6.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_7.jpg">
+<meta property="og:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_8.jpg">
+<meta property="og:updated_time" content="2020-03-08T12:02:15.912Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客文章">
-<meta name="twitter:description" content="It is my first blog page,I remember it forever!">
+<meta name="twitter:title" content="Spring的简单使用">
+<meta name="twitter:description" content="离之前更新ssm框架内容过去许久，经过一波三折我最终还是决定继续更新，本文主要介绍spring的核心，通过简单的入门程序对spring有一个基本的了解，spring容器可以通过注解实现也可以通过配置xml文件实现工具：eclipse+Maven  JDK1.8">
+<meta name="twitter:image" content="https://yoursite/2020/03/08/Spring的简单使用/spring_0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="CODE辉博客" type="application/atom+xml">
   
@@ -174,25 +185,25 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Spring的简单使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
+      Spring的简单使用
     </h1>
   
 
         
-        <a href="/2019/07/30/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-07-29T17:02:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-30</time>
+        <a href="/2020/03/08/Spring的简单使用/" class="archive-article-date">
+  	<time datetime="2020-03-07T20:34:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
 </a>
         
       </header>
       <div align="center" class="post-count">
-字数：29字 | 预计阅读时长：1分钟
+字数：2,701字 | 预计阅读时长：11分钟
       </div>
       <div align="center">
       <span id="busuanzi_container_page_pv">  本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
@@ -200,12 +211,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>It is my first blog page,I remember it forever!</p>
+        <p>离之前更新ssm框架内容过去许久，经过一波三折我最终还是决定继续更新，本文主要介绍spring的核心，通过简单的入门程序对spring有一个基本的了解，spring容器可以通过注解实现也可以通过配置xml文件实现<br>工具：eclipse+Maven  JDK1.8</p>
 <a id="more"></a>
-<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>–</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>–</p>
-<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><p>–</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://zhenghonghui99.github.io" target="_blank" rel="noopener">郑鸿辉的博客</a></p>
+<h2 id="什么是spring"><a href="#什么是spring" class="headerlink" title="什么是spring"></a>什么是spring</h2><p>首先Spring是一个开源的框架和一个变成范式，Spring为简化企业级应用开发而生，使用Spring可以使简单的JavaBean实现以前只有EJB才能实现的功能。Spring是一个IOC和AOP容器框架。在java开发领域，Spring相对于EJB来说是一种轻量级的，非侵入性的Java开发框架。Spring的用途不仅仅限于服务器端的开发。从简单性、可测试性和松耦合性角度而言，绝大部分Java应用都可以从Spring中受益。</p>
+<h2 id="spring两大核心"><a href="#spring两大核心" class="headerlink" title="spring两大核心"></a>spring两大核心</h2><h3 id="一-springIOC-控制反转-和DI-依赖注入"><a href="#一-springIOC-控制反转-和DI-依赖注入" class="headerlink" title="一.springIOC(控制反转)和DI(依赖注入)"></a>一.springIOC(控制反转)和DI(依赖注入)</h3><p><strong>IOC</strong>：Inverse of Control（控制反转），不是什么技术，而是一种设计思想，就是将原本在程序中手动创建对象的控制权，交由Spring框架来管理<br>举个例子：在现实生活中，人们要用到一样东西的时候，第一反应就是去找到这件东西，比如想喝新鲜橙汁，在没有饮品店的日子里，最直观的做法就是：买果汁机、买橙子，然后准备开水。值得注意的是：这些都是你自己“主动”创造的过程，也就是说一杯橙汁需要你自己创造。</p>
+<p><strong>DI</strong>：Dependency Injection（依赖注入），指 Spring 创建对象的过程中，将对象依赖属性（简单值，集合，对象）通过配置设值给该对象<br>举个例子:有一个dog类，有一个animal类，animal类中有一个dog类型的属性，想要给animal类中的dog类型的属性赋值就必须创建一个dog类，这样animal类就依赖于dog类，在animal类中创建一个dog类赋值给类中的dog类型属性就是注入依赖。在spring帮助下可以自动帮你完成这个过程。</p>
+<h3 id="二-AOP-面向切面编程"><a href="#二-AOP-面向切面编程" class="headerlink" title="二.AOP(面向切面编程)"></a>二.AOP(面向切面编程)</h3><p>AOP 即 Aspect Oriented Program 面向切面编程，首先，在面向切面编程的思想里面，把功能分为核心业务功能，和周边功能。所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。所谓的周边功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程AOP思想里，即被定义为切面在面向切面编程AOP的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 “编织” 在一起，这就叫AOP。<br>AOP的目的：AOP能够将那些与业务无关，却为业务模块所共同调用的逻辑或责任（例如事务处理、日志管理、权限控制等）封装起来，便于减少系统的重复代码，降低模块间的耦合度，并有利于未来的可拓展性和可维护性。<br><strong>总结概括spring就是工厂模式和代理模式的结合</strong></p>
+<h2 id="spring架构图"><a href="#spring架构图" class="headerlink" title="spring架构图"></a>spring架构图</h2><p><img src="/2020/03/08/Spring的简单使用/spring_0.jpg" alt="spring_0"></p>
+<h2 id="spring入门程序"><a href="#spring入门程序" class="headerlink" title="spring入门程序"></a>spring入门程序</h2><p>1.首先需要创建一个maven项目，然后再pom.xml引入相关依赖，怎么加入依赖我之前写过</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-context --&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-context&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;4.3.25.RELEASE&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2.然后在src/main/java下创建一个packager名为hello，在hello包下创建MessageService类、MessagePrinter类、Application主方法，代码依次如下：</p>
+<p>MessageService.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">package hello;</span><br><span class="line"></span><br><span class="line">public class MessageService &#123;</span><br><span class="line">	public <span class="function"><span class="title">MessageService</span></span>() &#123;</span><br><span class="line">		System.out.println(<span class="string">"MessageService..."</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	/**</span><br><span class="line">	 * 执行打印功能</span><br><span class="line">	 * @<span class="built_in">return</span> 返回要打印的字符串</span><br><span class="line">	 */</span><br><span class="line">	public String getMessage()</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">return</span> <span class="string">"Hello World!"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>MessagePrinter.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">package hello;</span><br><span class="line"></span><br><span class="line">public class MessagePrinter &#123;</span><br><span class="line">	public <span class="function"><span class="title">MessagePrinter</span></span>() &#123;</span><br><span class="line">		// TODO Auto-generated constructor stub</span><br><span class="line">		System.out.println(<span class="string">"MessagePrinter.."</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	/**</span><br><span class="line">	 * 建立与MessageService的依赖关系</span><br><span class="line">	 */</span><br><span class="line">	private MessageService service;</span><br><span class="line">	/**</span><br><span class="line">	 * 设置service的值</span><br><span class="line">	 * @param service</span><br><span class="line">	 */</span><br><span class="line">	public void setService(MessageService service) &#123;</span><br><span class="line">		this.service = service;</span><br><span class="line">	&#125;</span><br><span class="line">	public void printMessage()</span><br><span class="line">	&#123;</span><br><span class="line">		System.out.println(this.service.getMessage());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Application.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">package hello;</span><br><span class="line">/**</span><br><span class="line"> *</span><br><span class="line"> * @author Delevan</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line">public class Application &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		System.out.println(<span class="string">"application"</span>);</span><br><span class="line">		//这里需要我们自己创建对象</span><br><span class="line">		MessageService service=new MessageService();</span><br><span class="line">		MessagePrinter printer=new MessagePrinter();</span><br><span class="line">		//设置打印机对象的service属性，自己设置联系</span><br><span class="line">		printer.setService(service);</span><br><span class="line">		//打印消息</span><br><span class="line">		printer.printMessage();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.运行后得到应该是这样的输出结果<br>application<br>MessageService…<br>MessagePrinter..<br>Hello World!<br><strong>以上就是不用spring之前的操作，下面介绍通过注解和配置xml文件来实现spring容器的初始化</strong></p>
+<h3 id="一-注解实现"><a href="#一-注解实现" class="headerlink" title="一.注解实现"></a>一.注解实现</h3><p>1.首先在hello包下新建一个类ApplicationSpring，也可以之间复制原来的Application类，再改名称为ApplicationSpring<br>ApplicationSpring.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">package hello;</span><br><span class="line"></span><br><span class="line">import org.springframework.context.ApplicationContext;</span><br><span class="line">import org.springframework.context.annotation.AnnotationConfigApplicationContext;</span><br><span class="line">import org.springframework.context.annotation.ComponentScan;</span><br><span class="line"></span><br><span class="line">@ComponentScan</span><br><span class="line">//加上面这个注解表示，扫描有component注解的类，扫描到以后会自动创建到spring的容器当中</span><br><span class="line">public class ApplicationSpring &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		System.out.println(<span class="string">"application"</span>);</span><br><span class="line">		/**</span><br><span class="line">		 * MessageService service=new MessageService();</span><br><span class="line">	    MessagePrinter printer=new MessagePrinter();</span><br><span class="line">		//设置打印机对象的service属性</span><br><span class="line">		printer.setService(service);</span><br><span class="line">		//打印消息</span><br><span class="line">		printer.printMessage();</span><br><span class="line">		 */</span><br><span class="line">		//1.基于注解的方式来初始化spring容器,参数列表中写spring容器所在的位置，就是有componentscan注解类的位置，写入该类</span><br><span class="line">		ApplicationContext context=  new AnnotationConfigApplicationContext(ApplicationSpring.class);</span><br><span class="line">		//我们初始化容器后，执行一次，那么标有component注解类的无参构造方法就会自动被执行，也就是创建一个该类对象，这就是spring容器自动帮我们创建对象</span><br><span class="line">		//从容器中获取MessagePrinter对象</span><br><span class="line">		MessagePrinter printer=context.getBean(MessagePrinter.class);</span><br><span class="line">		//从容器中获取MessageService对象</span><br><span class="line">		//MessageService service=context.getBean(MessageService.class);</span><br><span class="line">		//输出我们拿到的这两个对象</span><br><span class="line">		//System.out.println(printer);</span><br><span class="line">		//System.out.println(service);</span><br><span class="line">		//同样可以打印消息</span><br><span class="line">		//printer.setService(service);</span><br><span class="line">		//打印消息</span><br><span class="line">		printer.printMessage();</span><br><span class="line">		//2.同样printer.setService(service)这样的依赖关系也可以通过spring来完成，首先我们需要在类中的setService方法上加一个@Autowired</span><br><span class="line">		//添加好Autowird的注释之后，就可以把从容器中获取MessageService对象和printer.setService(service)这两条语句注释掉了</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.然后在MessageService.java和MessagePrinter.java的这些地方加入这些注释，如图<br><img src="/2020/03/08/Spring的简单使用/spring_1.jpg" alt="spring_1"><br><img src="/2020/03/08/Spring的简单使用/spring_2.jpg" alt="spring_2"><br>3.添加好想要相应的注释后，运行ApplicationSpring类，也会得到之前一样的输出。</p>
+<h3 id="二-配置xml文件实现"><a href="#二-配置xml文件实现" class="headerlink" title="二.配置xml文件实现"></a>二.配置xml文件实现</h3><p>为了能生成applicationContext.xml文件，虽然也可以自己手动创建xml，再把beans的信息复制粘贴上去，但是为了能提高效率，就必须使用一些插件来帮助<br>1.在 Eclipse Marketplace仓库中，搜索sts<br>2.安装Spring Tools 3后支持插件spring XML配置文件，安装完毕后重启就可以用了<br><img src="/2020/03/08/Spring的简单使用/spring_3.jpg" alt="spring_3"><br>3.然后在src/main/resources下右键-&gt;new-&gt;other-&gt;找到spring下的spring bean configura file，点击创建即可，命名为applicationContext.xml<br><img src="/2020/03/08/Spring的简单使用/spring_4.jpg" alt="spring_4"><br>4.创建完毕后将applicationContext.xml进行配置，如下</p>
+<p>applicationContext.xml</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</span><br><span class="line">&lt;beans xmlns=<span class="string">"http://www.springframework.org/schema/beans"</span></span><br><span class="line">	xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span><br><span class="line">	xsi:schemaLocation=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span><br><span class="line">	&lt;!--</span><br><span class="line">	bean元素：描述当前的对象需要由sprign容器管理</span><br><span class="line">	id属性：标记对象，未来在应用程序中可以根据id获取对象</span><br><span class="line">	class：被管理类的全名</span><br><span class="line">	 --&gt;</span><br><span class="line">&lt;bean id=<span class="string">"service"</span> class=<span class="string">"hello.MessageService"</span>&gt;&lt;/bean&gt;</span><br><span class="line">	&lt;bean id=<span class="string">"printer"</span> class=<span class="string">"hello.MessagePrinter"</span>&gt;</span><br><span class="line">		&lt;!--</span><br><span class="line">		为了建立printer和service之间的依赖关系，在bean结点下添加一个property结点</span><br><span class="line">		name属性：与MessagePrinter类中的MessageSerive属性的名称对应，故name后面添加service</span><br><span class="line">	    ref：我要引用那一个对象，当然我要引用的是MessageService对象，故找到该类的beanId为service</span><br><span class="line">		这样就完成了把servive对象注入printer对象的工作</span><br><span class="line">		 --&gt;</span><br><span class="line">		&lt;property name=<span class="string">"service"</span> ref=<span class="string">"service"</span>&gt;&lt;/property&gt;</span><br><span class="line">	&lt;/bean&gt;</span><br><span class="line">&lt;/beans&gt;</span><br></pre></td></tr></table></figure>
+
+<p>5.<strong>删掉之前所有的注解，将ApplicationSpring.java的内容改写成如下</strong></p>
+<p>ApplicationSpring.java</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">package hello;</span><br><span class="line"></span><br><span class="line">import org.springframework.context.ApplicationContext;</span><br><span class="line">import org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"></span><br><span class="line">public class ApplicationSpring &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		System.out.println(<span class="string">"application"</span>);</span><br><span class="line"></span><br><span class="line">		//基于xml的方式来初始化spring容器,ClassPathxmlApplicationContext参数列表放xml的配置路径，因为在根目录下之间写文件名即可</span><br><span class="line">		ApplicationContext context=  new ClassPathXmlApplicationContext(<span class="string">"applicationContext.xml"</span>);</span><br><span class="line">		//我们初始化容器后，执行一次，那么标有component注解类的无参构造方法就会自动被执行，也就是创建一个该类对象，这就是spring容器自动帮我们创建对象</span><br><span class="line">		//从容器中获取MessagePrinter对象</span><br><span class="line">		MessagePrinter printer=context.getBean(MessagePrinter.class);</span><br><span class="line">		//打印消息</span><br><span class="line">		printer.printMessage();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>6.点击运行ApplicationSpring类后，得到和之前通过注解方式实现spring容器管理的输出一样，自己多体会一下。<br><img src="/2020/03/08/Spring的简单使用/spring_5.jpg" alt="spring_5"></p>
+<h2 id="spring程序添加日志系统"><a href="#spring程序添加日志系统" class="headerlink" title="spring程序添加日志系统"></a>spring程序添加日志系统</h2><p>无论是以注解方式还是以xml方式的spring应用程序都可以添加一个日志系统，一般是日志系统是log4j<br>1.首先到pom.xml添加log4j的依赖包，跟我引用一样就行，2.x的需要配置很多东西</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- https://mvnrepository.com/artifact/log4j/log4j --&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;log4j&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;log4j&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.2.17&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2.到spring的官网，project–&gt;spring Framework–&gt;LEARN,选择对应spring版本(4.3.x)的Reference–&gt;找到logging<br><img src="/2020/03/08/Spring的简单使用/spring_6.jpg" alt="spring_6"></p>
+<p>3.到resource文件下创建properties，new-&gt;file-&gt;输入log4j.properties-&gt;finish<br><img src="/2020/03/08/Spring的简单使用/spring_7.jpg" alt="spring_7"><br>简单说一下，开放一个INFO级别的日志记录器，并且日志记录器的名称为stdout，日志记录器在控制台上输出，按照一定格式，最后一句的意思是在log4j.category.org.springframework.beans.factory包下输出的日志是DEBUG级别<br>这就是一个基本的log4j的配置信息</p>
+<p>4.运行ApplicationSpring.java，得到丰富的信息<br><img src="/2020/03/08/Spring的简单使用/spring_8.jpg" alt="spring_8"><br>以上就是日志系统所能记录的内容，清晰的记录整个spring配合着applicationContext的xml文件，为我们在spring容器中创建bean这样的一个过程，在create一个service对象的时候也打印出了对应类的构造方法，这样就成功在spring应用程序中加入了log4j日志系统</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>虽然对spring的深入了解还不够，但是能知道它的两大核心IOC和AOP，通过使用注解或xml的方式实现spring容器的初始化，完成对bean对象的自动装配。万事开头难，有了这个基础，对后续的学习也增加信心。最后通过引入log4j日志系统对spring容器的工作过程进行观察了解。</p>
 
       
 
@@ -235,6 +281,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">spring</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ssm</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -285,7 +350,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite/2019/07/30/我的第一篇博客文章/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yoursite/2020/03/08/Spring的简单使用/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -299,18 +364,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/05/学习HEXO的体会/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          学习HEXO的体会
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/11/10/linux安装及GUI图形界面的安装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">linux安装及GUI图形界面的安装</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -337,7 +393,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章"><span class="toc-number">1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二章"><span class="toc-number">2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三章"><span class="toc-number">3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">4.</span> <span class="toc-text">参考文献</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是spring"><span class="toc-number">1.</span> <span class="toc-text">什么是spring</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spring两大核心"><span class="toc-number">2.</span> <span class="toc-text">spring两大核心</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-springIOC-控制反转-和DI-依赖注入"><span class="toc-number">2.1.</span> <span class="toc-text">一.springIOC(控制反转)和DI(依赖注入)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-AOP-面向切面编程"><span class="toc-number">2.2.</span> <span class="toc-text">二.AOP(面向切面编程)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spring架构图"><span class="toc-number">3.</span> <span class="toc-text">spring架构图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spring入门程序"><span class="toc-number">4.</span> <span class="toc-text">spring入门程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-注解实现"><span class="toc-number">4.1.</span> <span class="toc-text">一.注解实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-配置xml文件实现"><span class="toc-number">4.2.</span> <span class="toc-text">二.配置xml文件实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spring程序添加日志系统"><span class="toc-number">5.</span> <span class="toc-text">spring程序添加日志系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">6.</span> <span class="toc-text">总结</span></a></li></ol>
                     </div>
                 </span>
             </div>
